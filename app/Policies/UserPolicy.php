@@ -2,7 +2,6 @@
 
 namespace App\Policies;
 
-use App\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class UserPolicy
@@ -14,8 +13,8 @@ class UserPolicy
      *
      * @return void
      */
-    public function update(User $currentUser, $user)
+    public function update($currentUser,$users)
     {
-        return $currentUser->id === $user->id;
+        return $currentUser->id === $users->id;
     }
 }
