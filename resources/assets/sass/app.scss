@@ -109,7 +109,7 @@ body {
         margin: 12px 0;
     }
 
-    .    .meta {
+    .meta {
         font-size: .9em;
         color: #b3b3b3;
     }
@@ -178,5 +178,19 @@ body {
     .meta{
         font-sizze: .9em;
         color: #b3b3b3;
+    }
+}
+
+/* Notifications badge */
+
+.notifications-badge {
+    margin-top: -1;
+
+    .badge-fade {
+        background-color: #EBE8E8;
+    }
+
+    .badge-hint {
+        background-color: #d15b47 !important;;
     }
 }
