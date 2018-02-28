@@ -20,4 +20,9 @@ class ReplyObserver
     {
         $reply->content = clean($reply->content, 'user_topic_body');
     }
+
+    public function delete(Reply $reply)
+    {
+        $reply->topic->decrement('reply_count', 1);
+    }
 }
